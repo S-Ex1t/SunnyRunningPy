@@ -41,7 +41,7 @@ random.shuffle(alphabet)
 table = ''.join(alphabet)[:10]
 
 API_ROOT = 'http://client3.aipao.me/api'
-Version = '2.11'
+Version = '2.14'
 
 # Generate Runnig Data Randomly
 RunTime = str(random.randint(720, 1000))  # seconds
