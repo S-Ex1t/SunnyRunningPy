@@ -24,8 +24,8 @@ def encrypt(s):
     return result
 
 
-def Run(IEMI=None):
-    if IEMI is None:
+def Run(IMEI=None):
+    if IMEI is None:
         # Input to IMEI
         if(len(sys.argv) > 1):
             IMEI = sys.argv[1]
@@ -37,7 +37,7 @@ def Run(IEMI=None):
         if (len(sys.argv) > 2 and sys.argv[2].upper() == 'Y'):
             pass
         else:
-            print("Your IEME Code:", IMEI)
+            print("Your IMEI Code:", IMEI)
             Sure = str(input("Sure?(Y/N)"))
             if(Sure == 'Y' or Sure == 'y'):
                 pass
