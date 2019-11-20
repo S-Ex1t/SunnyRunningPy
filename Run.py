@@ -1,9 +1,11 @@
+#!/bin/python3
 import requests
 import json
 import time
 import hashlib
 import random
 import sys
+
 
 
 # Generate table Randomly
@@ -71,7 +73,10 @@ def Run(IMEI=None):
 
     Lengths = GSjson['Data']['SchoolRun']['Lengths']
 
-    print(Lengths)
+    print('User Info:',GSjson['Data']['User']['UserID'],GSjson['Data']['User']['NickName'],GSjson['Data']['User']['UserName'],GSjson['Data']['User']['Sex'])
+    print('Running Info:',GSjson['Data']['SchoolRun']['Sex'],GSjson['Data']['SchoolRun']['SchoolId'],GSjson['Data']['SchoolRun']['SchoolName'],GSjson['Data']['SchoolRun']['MinSpeed'],
+        GSjson['Data']['SchoolRun']['MaxSpeed'],GSjson['Data']['SchoolRun']['Lengths'])
+
     # Start Running
     SRSurl = API_ROOT + '/' + token + \
         '/QM_Runs/SRS?S1=30.534736&S2=114.367788&S3=' + str(Lengths)
