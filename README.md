@@ -1,6 +1,7 @@
 # SunnyRunningPy
 A Py 2 Run    
-上榜大学生吐槽的十大APP :) 
+
+汉姆上榜大学生吐槽的十大APP :) 
 
 
 感谢[zyc199847](https://github.com/zyc199847)提供的思路  
